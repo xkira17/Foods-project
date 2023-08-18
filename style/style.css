@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.home {
+    min-height: 100vh;
+}
+
+.home .header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+
+.home .header .logo {
+    margin-left: 150px;
+    font-size: 33px;
+    font-weight: 600;
+    color: #121212;
+}
+
+.home .header .nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 150px;
+}
+
+.home .header .nav ul li a{
+    color: #121212;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.home .header .nav ul li a:hover {
+    color: rgb(255, 106, 0);
+}
+
+
+.home .search-row {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    background-color: #2c2c2c;
+}
+
+.home .search-row input {
+    width: 700px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.8);
+}
+
+.home-content {
+    width: 100%;
+    background: rgb(201, 201, 201);
+    min-height: 454px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content main {
+    width: 80%;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    margin: 0 auto;
+    height: 454px;
+}
+
+.foods-content {
+    padding: 30px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.foods-content img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.foods-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.foods-content:hover {
+    transform: translateY(-15px);
+}
